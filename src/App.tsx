@@ -64,12 +64,22 @@ function App() {
           and surrounding areas. With years of hands-on experience in Maine, we’ve brought our expertise down south to deliver top-quality services to Florida
           homeowners and businesses.
         </p>
+ 
+  <div className="w-full h-[400px]">
+<div className="w-full h-[400px]">
+<iframe src="https://www.google.com/maps/d/embed?mid=15KuvHlVat02CnO-mMU2jRvzLyfBR1QM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+</div>
+
+</div> 
+
+ 
 
 </div>
-<div id='services' className='bg-gray-100 h-screen grid grid-cols-2 items-center p-24 w-full gap-8'>
+<div id='services' className='bg-gray-100 h-screen  p-24 w-full gap-8'>
         <h1 className='text-4xl font-bold mb-[5vh] col-span-2 underline text-center'>
           Our Services
         </h1>
+        <div className='flex justify-around items-center'>
 <div className='h-full'>
         <h2 className='text-2xl font-semibold mb-4'>
           Pressure Washing Services:
@@ -125,7 +135,8 @@ function App() {
            </ol>
           </ul>
 </div>
-<h1 className='text-2xl font-bold mb-[5vh] w-[50vw]  col-span-2 underline text-center'>
+</div>
+<h1 className='text-2xl font-bold mb-[5vh] w-full col-span-2 underline text-center'>
         Call Us Today for a Free Estimate! or Contact Us for to Schedule an In Person Quote!
 </h1>
 </div>
