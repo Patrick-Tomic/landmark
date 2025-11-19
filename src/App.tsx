@@ -55,89 +55,212 @@ function App() {
     />
   </div>
 </div>
-<div id='about' className='flex justify-center  items-center h-screen flex-col'>
-        <h1 className='text-4xl font-bold mb-[5vh] underline'>
+<div id='about' className='flex justify-center  items-center h-screen'>
+        <div className='items-center flex w-[150vw] flex-col'>
+        <h1 className='text-5xl font-bold mb-[5vh] underline'>
           About Us
         </h1>
-        <p className='w-1/2 text-lg'>
+        <p className='w-1/2 text-2xl'>
           Based in Tampa, Florida, we are a trusted pressure washing and screen repair company proudly serving Zephyrhills, Wesley Chapel, Land O’ Lakes, Lutz,
           and surrounding areas. With years of hands-on experience in Maine, we’ve brought our expertise down south to deliver top-quality services to Florida
           homeowners and businesses.
         </p>
- 
+ </div>
   <div className="w-full h-[400px]">
 <div className="w-full h-[400px]">
 <iframe src="https://www.google.com/maps/d/embed?mid=15KuvHlVat02CnO-mMU2jRvzLyfBR1QM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
 </div>
-
 </div> 
 
- 
-
 </div>
-<div id='services' className='bg-gray-100 h-screen  p-24 w-full gap-8'>
+<div id='services' className='bg-gray-100  flex flex-col items-center p-24 w-full gap-8'>
         <h1 className='text-4xl font-bold mb-[5vh] col-span-2 underline text-center'>
-          Our Services
+          Landmark Services
         </h1>
-        <div className='flex justify-around items-center'>
-<div className='h-full'>
+        <p className='w-[50vw] text-xl'>
+          Landmark Pressure Washing & Screen Repair provides reliable, high-quality exterior cleaning 
+          and screen enclosure services for homes and businesses. We specialize in driveways, sidewalks,
+           lanais, siding, fences, and paver sealing—restoring surfaces to a bright, like-new finish—along
+           with professional screen repair to keep enclosures looking clean and functional. With attention
+            to detail and professional equipment, Landmark delivers fast, safe, and affordable results you can count on.
+        </p>
+        <div className='flex justify-center'>
+<div className='h-full mr-[10vw] '>
         <h2 className='text-2xl font-semibold mb-4'>
-          Pressure Washing Services:
+          Pressure Washing Services
         </h2>
         <ul className='list-disc list-inside text-lg space-y-4'>
            <ol className='list-decimal list-inside'>
-            <li>
-              Driveways and sidewalks
-            </li>
-            <li>
+            <li id='option'>    
+                 Driveways and sidewalks 
+                 </li>  
+              <p>
+                Remove mold, dirt, and tire marks for a bright, like-new look.
+              </p>
+             <ul className='list-disc list-inside ml-6'>
+              <li>
+                Eco-safe Detergent
+              </li>
+              <li>
+                Fast Drying
+              </li>
+             </ul>
+            <li id='option'>
               House exteriors 
             </li>
-            <li>
+            <p>
+            Gentle wash that cleans without damaging surfaces.
+            </p>
+            <ul className='list-disc list-inside ml-6'>
+              <li>
+                HOA-friendly results
+              </li>
+              <li>
+                Protect your investment
+              </li>
+            </ul>
+            <li id='option'>
               Decks and patios
             </li>
-            <li>
+            <p>
+              Restores color and removes mildew safely.
+            </p>
+            <ul className='list-disc list-inside ml-6'>
+              <li>
+                Wood and composite safe
+              </li>
+              <li>
+                Prevents slipping hazards
+              </li>
+            </ul>
+            <li id='option'>
               Fences
             </li>
-            <li>
-              Roof cleaning
+            <p>
+            Revives wood or vinyl for a clean, uniform finish.
+            </p>
+            <ul className='list-disc list-inside ml-6'>
+              <li>
+                Extends fence life
+              </li>
+              <li>
+                Enhances curb appeal
+              </li>
+            </ul>
+            <li id='option'>
+              Gutter Cleaning
             </li>
-            <li>
+            <p>
+            Removes staining and restores white finishes.
+            </p>
+            <ul className='list-disc list-inside ml-6'>
+              <li>Protects your investment
+              </li>
+              <li>
+                removes mold and mildew
+              </li>
+            </ul>
+            <li id='option'>
               Pool areas
             </li>
+            <p className='w-[20vw]'>
+              Removes mildew, dirt, and buildup for a clean, safe poolside surface.
+            </p>
+            <ul className='list-disc list-inside ml-6'>
+              <li>
+                Slip-resistant cleaning
+              </li>
+              <li>
+                Enhances pool area aesthetics
+              </li>
+            </ul>
            </ol>
-  <li>Paver sealing
+  <li id='option'>Paver sealing</li>
+    <p>
+      Protects color and adds long-lasting shine.
+    </p>
+    <h1 id='option'>
+      Finish options:
+    </h1>
     <ul className='list-disc list-inside ml-6'>
       <li>High gloss</li>
       <li>Semi-gloss</li>
       <li>Matte</li>
     </ul>
-  </li>
+  
           </ul>
 </div>
-<div className='h-full'>
+<div className='h-full '>
         <h2 className='text-2xl font-semibold mb-4 mt-8'>
           Screen Repair Services:
         </h2>
         <ul className='list-disc list-inside text-lg space-y-4'>
            <ol className='list-decimal list-inside'>
-            <li>
+            <li id='option'>
               Screen door repair and replacement
             </li>
-            <li>
+            <p>
+              Restores smooth operation and tight mesh.
+            </p>
+            <ul className='list-disc list-inside ml-6'>
+              <li>
+                Variety of mesh options
+              </li>
+              <li>
+                Durable frames
+              </li>
+            </ul>
+            <li id='option'>
               Window screen repair and replacement
             </li>
-            <li>
+            <p className='w-[25vw]'>
+              Fixes tears, replaces worn screens, and restores smooth operation for a secure, polished look.
+            </p>
+            <ul className='list-disc list-inside ml-6'>
+              <li>
+                Professional-grade Materials
+              </li>
+              <li>
+                Quick Repair and Installation
+              </li>
+            </ul>
+            <li id='option'>
               Patio and lanai screen enclosures
             </li>
-            <li>
+            <ul className='list-disc list-inside ml-6'>
+              <li>
+                Full enclosure repair
+              </li>
+              <li>
+                Professional-grade Materials
+              </li>
+              <li>
+                Extends Screen Lifespan
+              </li>
+            </ul>
+            <li id='option'>
               Custom screen solutions
             </li>
+            <p className='w-[25vw]'>
+              Tailor-made screens for windows, doors, and enclosures—designed to fit perfectly and enhance durability.
+            </p>
+            <ul className='list-disc list-inside ml-6'>
+              <li>
+                Custom sizes and shapes
+              </li>
+              <li>
+                Enhances home appearance
+              </li>
+              <li>
+                Keeps insects and Debris out
+              </li>
+            </ul>
            </ol>
           </ul>
 </div>
 </div>
 <h1 className='text-2xl font-bold mb-[5vh] w-full col-span-2 underline text-center'>
-        Call Us Today for a Free Estimate! or Contact Us for to Schedule an In Person Quote!
+        Call Us Today for a Free Estimate! or Contact Us to Schedule an In Person Quote!
 </h1>
 </div>
     </>
