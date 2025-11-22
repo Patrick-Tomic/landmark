@@ -1,31 +1,57 @@
 import './App.css'
 import './index.css'
+import logo from './assets/logo.png'
 import { useEffect, useState } from 'react'
-function App() {
-  const [imgASrc, setImgA] = useState('./src/assets/pressurewashA.jpeg')
-  const [imgBSrc, setImgB] = useState('./src/assets/screenrepairA.jpeg')
-  const [imgCSrc, setImgC] = useState('./src/assets/screenrepairB.jpeg')
-  const [fade, setFade] = useState(false)
+export default function App() {
+  const [imgASrc, setImgA] = useState('./src/assets/SRA.jpg')
+  const [imgBSrc, setImgB] = useState('./src/assets/pair1A.jpg')
+  const [imgCSrc, setImgC] = useState('./src/assets/pair1B.jpg')
   useEffect(() => {
     // cycle through some images
     const images = [
-      "./src/assets/pressurewashA.jpeg",
-      "./src/assets/pressurewashB.jpeg",
-      "./src/assets/pressurewashC.jpeg",
+      "./src/assets/SRA.jpg",
+      "./src/assets/SRB.jpg",
+      "./src/assets/SRC.jpg",
+      "./src/assets/SRD.jpg",
+      "./src/assets/SRE.jpg",
+      "./src/assets/SRF.jpg",
+
     ];
+    const before = [
+      './src/assets/pair1A.jpg',
+      './src/assets/pair2A.jpg',
+      './src/assets/pair3A.jpg',
+      './src/assets/pair4A.jpg',
+      './src/assets/pair5A.jpg',
+      './src/assets/pair6A.jpg',
+    ]
+    const after = [
+      './src/assets/pair1B.jpg',
+      './src/assets/pair2B.jpg',
+      './src/assets/pair3B.jpg',
+      './src/assets/pair4B.jpg',
+      './src/assets/pair5B.jpg',
+      './src/assets/pair6B.jpg',
+    ]
     let i = 0;
     const interval = setInterval(() => {
       i = (i + 1) % images.length;
       setImgA(images[i]);
+      setImgB(before[i]);
+      setImgC(after[i]);
     }, 8000);
     return () => clearInterval(interval);
   }, []);
   return(
     <>
-    <nav className='bg-[#1E3A8A] p-4 h-[20vh] text-white flex items-center justify-center sticky top-0 z-50'>
-      <h1>
+    <nav className='bg-[#E53E3E] p-4 h-[10vh] text-white flex items-center justify-around sticky top-0 z-50'>
+     <img className='w-[5vw]' src={logo} alt="" />
+      <a href='#top'>
         Landmark Pressure Washing and Screen Repair
-      </h1>
+      </a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div id="hero" className="h-screen p-24 bg-[url('./assets/tile.jpeg')] bg-repeat bg-[length:200px_200px] inset-0 ">
     <div id="imgDiv" className="grid grid-cols-3 grid-rows-2 gap-4  h-full">
@@ -33,11 +59,10 @@ function App() {
       <img
         src={imgASrc}
         alt=""
-        className={`row-span-3 col-span-2 w-[80%] h-[100%] object-cover rounded-xl transition-all duration-700 ease-in-out ${
-          fade ? "opacity-0 scale-105" : "opacity-100 scale-100"
+        className={`row-span-3 col-span-2 w-[80%] h-[100%] object-cover rounded-xl transition-all duration-700 ease-in-out 
         }`}
       />
-
+ 
     {/* Right top image */}
     <img
       id="imgB"
@@ -255,16 +280,26 @@ function App() {
                 Keeps insects and Debris out
               </li>
             </ul>
-           </ol>
-          </ul>
+ </ol>
+ </ul>
 </div>
 </div>
-<h1 className='text-2xl font-bold mb-[5vh] w-full col-span-2 underline text-center'>
-        Call Us Today for a Free Estimate! or Contact Us to Schedule an In Person Quote!
-</h1>
 </div>
-    </>
+<div id='contact' className='bg-[#1E3A8A] flex flex-col justify-around items-center h-[40vh]'>
+  <h1 className='text-5xl text-white'>
+    Contact us Now!
+  </h1>
+  <div className='flex justify-around  w-full'>
+         <a href="tel:+2074791570" 
+   className="bg-red-600 text-white px-[50px] py-[25px] text-2xl rounded-lg font-semibold hover:bg-red-700 transition">
+  Call Now For a Quote Today!
+</a>
+ <a href="mailto:tmlegos@gmail.com" 
+   className="bg-red-600 text-white px-[50px] py-[25px] text-2xl rounded-lg font-semibold hover:bg-red-700 transition">
+  Email us for further information
+</a>
+</div>
+</div>
+</>
   )
 }
-
-export default App

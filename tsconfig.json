@@ -3,5 +3,12 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",      // for React 17+ JSX transform
+    "module": "ESNext",      // usually required for Vite/ESM
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true
+  }
 }
