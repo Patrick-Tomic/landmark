@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 li{
     font-size: 20px;
@@ -15,4 +16,30 @@ p{
 #option{
     font-size: 25px;
     font-weight: bold;
+}
+
+@media (max-width: 1400px){
+#aboutP{
+    font-size: 15px;
+}
+iframe{
+    width: 480px;
+    height:360px
+}
+}
+@media(max-width:600px){
+    html{
+        width: 600px;
+    }   
+     #imgA{
+        grid-column: 1/ -1;
+        width: 50vw;
+        height: 25vh;
+    }
+    #imgB{
+        grid-column: 1/2;
+        width: 50vw;
+        height: 25vh;
+    }
+    
 }

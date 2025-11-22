@@ -56,7 +56,7 @@ export default function App() {
     <div id="hero" className="h-screen p-24 bg-[url('./assets/tile.jpeg')] bg-repeat bg-[length:200px_200px] inset-0 ">
     <div id="imgDiv" className="grid grid-cols-3 grid-rows-2 gap-4  h-full">
     {/* Large main image taking 2 columns & 2 rows */}
-      <img
+      <img id='imgA'
         src={imgASrc}
         alt=""
         className={`row-span-3 col-span-2 w-[80%] h-[100%] object-cover rounded-xl transition-all duration-700 ease-in-out 
@@ -85,7 +85,7 @@ export default function App() {
         <h1 className='text-5xl font-bold mb-[5vh] underline'>
           About Us
         </h1>
-        <p className='w-1/2 text-2xl'>
+        <p id='aboutP' className='w-1/2 text-2xl'>
           Based in Tampa, Florida, we are a trusted pressure washing and screen repair company proudly serving Zephyrhills, Wesley Chapel, Land O’ Lakes, Lutz,
           and surrounding areas. With years of hands-on experience in Maine, we’ve brought our expertise down south to deliver top-quality services to Florida
           homeowners and businesses.
