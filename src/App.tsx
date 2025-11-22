@@ -9,29 +9,29 @@ export default function App() {
   useEffect(() => {
     // cycle through some images
     const images = [
-      "./src/assets/SRA.jpg",
-      "./src/assets/SRB.jpg",
-      "./src/assets/SRC.jpg",
-      "./src/assets/SRD.jpg",
-      "./src/assets/SRE.jpg",
-      "./src/assets/SRF.jpg",
+      "./assets/SRA.jpg",
+      "./assets/SRB.jpg",
+      "./assets/SRC.jpg",
+      "./assets/SRD.jpg",
+      "./assets/SRE.jpg",
+      "./assets/SRF.jpg",
 
     ];
     const before = [
-      './src/assets/pair1A.jpg',
-      './src/assets/pair2A.jpg',
-      './src/assets/pair3A.jpg',
-      './src/assets/pair4A.jpg',
-      './src/assets/pair5A.jpg',
-      './src/assets/pair6A.jpg',
+      './assets/pair1A.jpg',
+      './assets/pair2A.jpg',
+      './assets/pair3A.jpg',
+      './assets/pair4A.jpg',
+      './assets/pair5A.jpg',
+      './assets/pair6A.jpg',
     ]
     const after = [
-      './src/assets/pair1B.jpg',
-      './src/assets/pair2B.jpg',
-      './src/assets/pair3B.jpg',
-      './src/assets/pair4B.jpg',
-      './src/assets/pair5B.jpg',
-      './src/assets/pair6B.jpg',
+      './assets/pair1B.jpg',
+      './assets/pair2B.jpg',
+      './assets/pair3B.jpg',
+      './assets/pair4B.jpg',
+      './assets/pair5B.jpg',
+      './assets/pair6B.jpg',
     ]
     let i = 0;
     const interval = setInterval(() => {
