@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
+  width: 1000vw;
 }
 li{
     font-size: 20px;
@@ -32,14 +32,35 @@ iframe{
         width: 600px;
     }   
      #imgA{
-        grid-column: 1/ -1;
+       
         width: 50vw;
         height: 25vh;
     }
     #imgB{
-        grid-column: 1/2;
+        
         width: 50vw;
         height: 25vh;
     }
-    
+    #imgC{
+        width: 50vw;
+        height: 25vh;
+    }
+    #imgDiv{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+iframe{
+    width:500px;
+    margin-left:50px;
+    margin-top: 25px;
+    height: 250px;
+}
+#about{
+    flex-direction: column;
+}
+#listDiv{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 }

@@ -109,7 +109,7 @@ export default function App() {
            with professional screen repair to keep enclosures looking clean and functional. With attention
             to detail and professional equipment, Landmark delivers fast, safe, and affordable results you can count on.
         </p>
-        <div className='flex justify-center'>
+        <div id='listDiv' className='flex justify-center'>
 <div className='h-full mr-[10vw] '>
         <h2 className='text-2xl font-semibold mb-4'>
           Pressure Washing Services
@@ -266,7 +266,7 @@ export default function App() {
             <li id='option'>
               Custom screen solutions
             </li>
-            <p className='w-[25vw]'>
+            <p className=''>
               Tailor-made screens for windows, doors, and enclosures—designed to fit perfectly and enhance durability.
             </p>
             <ul className='list-disc list-inside ml-6'>
