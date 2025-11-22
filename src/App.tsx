@@ -3,35 +3,35 @@ import './index.css'
 import logo from './assets/logo.png'
 import { useEffect, useState } from 'react'
 export default function App() {
-  const [imgASrc, setImgA] = useState('./src/assets/SRA.jpg')
-  const [imgBSrc, setImgB] = useState('./src/assets/pair1A.jpg')
-  const [imgCSrc, setImgC] = useState('./src/assets/pair1B.jpg')
+  const [imgASrc, setImgA] = useState('./SRA.jpg')
+  const [imgBSrc, setImgB] = useState('./pair1A.jpg')
+  const [imgCSrc, setImgC] = useState('./pair1B.jpg')
   useEffect(() => {
     // cycle through some images
     const images = [
-      "./assets/SRA.jpg",
-      "./assets/SRB.jpg",
-      "./assets/SRC.jpg",
-      "./assets/SRD.jpg",
-      "./assets/SRE.jpg",
-      "./assets/SRF.jpg",
+      "./SRA.jpg",
+      "./SRB.jpg",
+      "./SRC.jpg",
+      "./SRD.jpg",
+      "./SRE.jpg",
+      "./SRF.jpg",
 
     ];
     const before = [
-      './assets/pair1A.jpg',
-      './assets/pair2A.jpg',
-      './assets/pair3A.jpg',
-      './assets/pair4A.jpg',
-      './assets/pair5A.jpg',
-      './assets/pair6A.jpg',
+      './pair1A.jpg',
+      './pair2A.jpg',
+      './pair3A.jpg',
+      './pair4A.jpg',
+      './pair5A.jpg',
+      './pair6A.jpg',
     ]
     const after = [
-      './assets/pair1B.jpg',
-      './assets/pair2B.jpg',
-      './assets/pair3B.jpg',
-      './assets/pair4B.jpg',
-      './assets/pair5B.jpg',
-      './assets/pair6B.jpg',
+      './pair1B.jpg',
+      './pair2B.jpg',
+      './pair3B.jpg',
+      './pair4B.jpg',
+      './pair5B.jpg',
+      './pair6B.jpg',
     ]
     let i = 0;
     const interval = setInterval(() => {
