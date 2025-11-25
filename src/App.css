@@ -49,8 +49,8 @@ iframe{
     }
 
     #imgDiv{
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
+     display: flex;
+     flex-direction: column;
     }
 iframe{
     width:500px;
