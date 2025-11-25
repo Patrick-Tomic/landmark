@@ -102,7 +102,7 @@ export default function App() {
         <h1 className='text-4xl font-bold mb-[5vh] col-span-2 underline text-center'>
           Landmark Services
         </h1>
-        <p className='w-[50vw] text-xl'>
+        <p id='serviceAbout' className='w-[50vw] text-xl'>
           Landmark Pressure Washing & Screen Repair provides reliable, high-quality exterior cleaning 
           and screen enclosure services for homes and businesses. We specialize in driveways, sidewalks,
            lanais, siding, fences, and paver sealing—restoring surfaces to a bright, like-new finish—along
@@ -188,7 +188,7 @@ export default function App() {
             <li id='option'>
               Pool areas
             </li>
-            <p className='w-[20vw]'>
+            <p >
               Removes mildew, dirt, and buildup for a clean, safe poolside surface.
             </p>
             <ul className='list-disc list-inside ml-6'>
@@ -238,7 +238,7 @@ export default function App() {
             <li id='option'>
               Window screen repair and replacement
             </li>
-            <p className='w-[25vw]'>
+            <p >
               Fixes tears, replaces worn screens, and restores smooth operation for a secure, polished look.
             </p>
             <ul className='list-disc list-inside ml-6'>

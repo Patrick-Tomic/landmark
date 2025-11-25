@@ -4,7 +4,6 @@
 
 html {
   scroll-behavior: smooth;
-  width: 1000vw;
 }
 li{
     font-size: 20px;
@@ -31,6 +30,9 @@ iframe{
     html{
         width: 600px;
     }   
+    #serviceAbout{
+        width:auto;
+    }
      #imgA{
        
         width: 50vw;
@@ -45,6 +47,7 @@ iframe{
         width: 50vw;
         height: 25vh;
     }
+
     #imgDiv{
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
