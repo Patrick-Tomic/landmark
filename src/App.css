@@ -33,11 +33,7 @@ iframe{
     nav{
         font-size: 12px;
     }    
-    #contactBtn{
-        width: 30vw;
-        height: 15vh;
-        font-size: 18px;
-    }
+   
     #serviceAbout{
         width:auto;
     }
@@ -79,5 +75,9 @@ a{
     width: 50px;
     font-size: 8px;
 }
-
+  #contactBtn{
+    
+     
+   text-align: center;
+  }
 }

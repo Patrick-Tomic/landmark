@@ -46,7 +46,7 @@ export default function App() {
     <>
     <nav className='bg-[#E53E3E] p-4 h-[10vh] text-white flex items-center justify-around sticky top-0 z-50'>
      <img className='w-[5vw]' src={logo} alt="" />
-      <a href='#top'>
+      <a className='titleAnchor' href='#top'>
         Landmark Pressure Washing and Screen Repair
       </a>
       <a href="#about">About</a>
@@ -295,7 +295,7 @@ export default function App() {
   Call Now For a Quote Today!
 </a>
  <a id='contactBtn' href="mailto:tmlegos@gmail.com" 
-   className="bg-red-600 text-white px-[50px] py-[25px] text-2xl rounded-lg font-semibold hover:bg-red-700 transition">
+   className="bg-red-600 text-white px-[50px] py-[25px] text-2xl rounded-lg font-semibold hover:bg-red-700 transition sm:text-sm ">
   Email us for further information
 </a>
 </div>
