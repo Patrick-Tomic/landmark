@@ -28,7 +28,7 @@ iframe{
 }
 @media(max-width:600px){
     html{
-        width: 600px;
+        width: 100%;
     }   
     nav{
         font-size: 12px;
