@@ -61,13 +61,16 @@ iframe{
      flex-direction: column;
     }
 iframe{
-    width:500px;
-    margin-left:50px;
+    width:fit-content;
+    margin-left:100px;
     margin-top: 25px;
     height: 250px;
 }
 #about{
     flex-direction: column;
+}
+#title{
+    max-width: 50px;
 }
 #listDiv{
     flex-direction: column;
