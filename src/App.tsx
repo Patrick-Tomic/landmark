@@ -290,11 +290,11 @@ export default function App() {
     Contact us Now!
   </h1>
   <div className='flex justify-around  w-full'>
-         <a href="tel:+2074791570" 
+         <a id='contactBtn' href="tel:+2074791570" 
    className="bg-red-600 text-white px-[50px] py-[25px] text-2xl rounded-lg font-semibold hover:bg-red-700 transition">
   Call Now For a Quote Today!
 </a>
- <a href="mailto:tmlegos@gmail.com" 
+ <a id='contactBtn' href="mailto:tmlegos@gmail.com" 
    className="bg-red-600 text-white px-[50px] py-[25px] text-2xl rounded-lg font-semibold hover:bg-red-700 transition">
   Email us for further information
 </a>

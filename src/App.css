@@ -30,6 +30,14 @@ iframe{
     html{
         width: 600px;
     }   
+    nav{
+        font-size: 12px;
+    }    
+    #contactBtn{
+        width: 30vw;
+        height: 15vh;
+        font-size: 18px;
+    }
     #serviceAbout{
         width:auto;
     }
