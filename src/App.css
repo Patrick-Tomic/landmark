@@ -69,12 +69,15 @@ iframe{
 #about{
     flex-direction: column;
 }
-#title{
-    max-width: 50px;
-}
+
 #listDiv{
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+a{
+    width: 50px;
+    font-size: 8px;
+}
+
 }
