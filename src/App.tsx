@@ -92,12 +92,12 @@ export default function App() {
           and surrounding areas. With years of hands-on experience we deliver top quality services to Florida Homeowners.
         </p>
  </div>
-  <div className="w-full h-[400px]">
-<div className="w-full h-[400px]">
-<img className='w-[50vw] ml-[-5vw]' src={workArea} alt="" /></div>
-</div> 
+  
 
-</div>
+<img className='w-[50vw] ml-[-5vw]' src={workArea} alt="" /></div>
+ 
+
+ 
 <div id='services' className='bg-gray-100  flex flex-col items-center p-24 w-full gap-8'>
         <h1 className='text-4xl font-bold mb-[5vh] col-span-2 underline text-center'>
           Landmark Services
@@ -231,7 +231,7 @@ export default function App() {
             <li id='option'>
               Window screen repair and replacement
             </li>
-            <p className='w-[25vw]' >
+            <p id='tearP' className='w-[25vw]' >
               Fixes tears, replaces worn screens, and restores smooth operation for a secure, polished look.
             </p>
             <ul className='list-disc list-inside ml-6'>

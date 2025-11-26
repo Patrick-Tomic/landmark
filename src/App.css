@@ -49,7 +49,12 @@ p{
         height: 25vh;
     }
 
-    
+    #areaDiv{
+        align-self: center;
+    }
+    #tearP{
+        width: 100vw;
+    }
 
 #about{
     flex-direction: column;
