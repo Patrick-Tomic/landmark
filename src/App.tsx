@@ -94,7 +94,7 @@ export default function App() {
  </div>
   
 
-<img className='w-[50vw] ml-[-5vw]' src={workArea} alt="" /></div>
+<img id='area' className='w-[50vw] ml-[-5vw]' src={workArea} alt="" /></div>
  
 
  
@@ -110,8 +110,8 @@ export default function App() {
             to detail and professional equipment, Landmark delivers fast, safe, and affordable results you can count on.
         </p>
         <hr className='border-2 border-black border-solid w-full' />
-        <div id='listDiv' className='flex justify-center'>
-<div className='h-full mr-[10vw] '>
+        <div id='listDiv' className='flex justify-center '>
+<div id='serviceList' className='h-full mr-[10vw] '>
         <h2 className='text-2xl font-semibold mb-4'>
           Pressure Washing Services
         </h2>
@@ -208,7 +208,7 @@ export default function App() {
   
           </ul>
 </div>
-<div className='h-full '>
+<div id='serviceList' className='h-full '>
         <h2 className='text-2xl font-semibold mb-4 mt-8'>
           Screen Repair Services:
         </h2>
