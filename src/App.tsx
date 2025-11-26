@@ -2,10 +2,12 @@ import './App.css'
 import './index.css'
 import logo from './assets/logo.png'
 import { useEffect, useState } from 'react'
+import workArea from '../public/areaWork.png'
 export default function App() {
   const [imgASrc, setImgA] = useState('./SRA.jpg')
   const [imgBSrc, setImgB] = useState('./pair1A.jpg')
   const [imgCSrc, setImgC] = useState('./pair1B.jpg')
+
   useEffect(() => {
     // cycle through some images
     const images = [
@@ -80,21 +82,19 @@ export default function App() {
     />
   </div>
 </div>
-<div id='about' className='flex justify-center  items-center h-screen'>
-        <div className='items-center flex w-[150vw] flex-col'>
+<div id='about' className='flex justify-around items-center h-screen'>
+        <div className='items-center flex flex-col'>
         <h1 className='text-5xl font-bold mb-[5vh] underline'>
           About Us
         </h1>
         <p id='aboutP' className='w-1/2 text-2xl'>
-          Based in Tampa, Florida, we are a trusted pressure washing and screen repair company proudly serving Zephyrhills, Wesley Chapel, Land O’ Lakes, Lutz,
-          and surrounding areas. With years of hands-on experience in Maine, we’ve brought our expertise down south to deliver top-quality services to Florida
-          homeowners and businesses.
+          Based in Wesley Chapel, we are a trusted pressure washing and screen repair company proudly serving Zephyrhills, Wesley Chapel, Land O’ Lakes, Lutz,
+          and surrounding areas. With years of hands-on experience we deliver top quality services to Florida Homeowners.
         </p>
  </div>
   <div className="w-full h-[400px]">
 <div className="w-full h-[400px]">
-<iframe src="https://www.google.com/maps/d/embed?mid=15KuvHlVat02CnO-mMU2jRvzLyfBR1QM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-</div>
+<img className='w-[50vw] ml-[-5vw]' src={workArea} alt="" /></div>
 </div> 
 
 </div>
@@ -102,13 +102,14 @@ export default function App() {
         <h1 className='text-4xl font-bold mb-[5vh] col-span-2 underline text-center'>
           Landmark Services
         </h1>
-        <p id='serviceAbout' className='w-[50vw] text-xl'>
+        <p id='serviceAbout' className='w-[50vw] text-xl col-span-2'>
           Landmark Pressure Washing & Screen Repair provides reliable, high-quality exterior cleaning 
           and screen enclosure services for homes and businesses. We specialize in driveways, sidewalks,
            lanais, siding, fences, and paver sealing—restoring surfaces to a bright, like-new finish—along
            with professional screen repair to keep enclosures looking clean and functional. With attention
             to detail and professional equipment, Landmark delivers fast, safe, and affordable results you can count on.
         </p>
+        <hr className='border-2 border-black border-solid w-full' />
         <div id='listDiv' className='flex justify-center'>
 <div className='h-full mr-[10vw] '>
         <h2 className='text-2xl font-semibold mb-4'>
@@ -122,14 +123,6 @@ export default function App() {
               <p>
                 Remove mold, dirt, and tire marks for a bright, like-new look.
               </p>
-             <ul className='list-disc list-inside ml-6'>
-              <li>
-                Eco-safe Detergent
-              </li>
-              <li>
-                Fast Drying
-              </li>
-             </ul>
             <li id='option'>
               House exteriors 
             </li>
@@ -222,7 +215,7 @@ export default function App() {
         <ul className='list-disc list-inside text-lg space-y-4'>
            <ol className='list-decimal list-inside'>
             <li id='option'>
-              Screen door repair and replacement
+              Screen repair and replacement
             </li>
             <p>
               Restores smooth operation and tight mesh.
@@ -238,7 +231,7 @@ export default function App() {
             <li id='option'>
               Window screen repair and replacement
             </li>
-            <p >
+            <p className='w-[25vw]' >
               Fixes tears, replaces worn screens, and restores smooth operation for a secure, polished look.
             </p>
             <ul className='list-disc list-inside ml-6'>
@@ -263,23 +256,6 @@ export default function App() {
                 Extends Screen Lifespan
               </li>
             </ul>
-            <li id='option'>
-              Custom screen solutions
-            </li>
-            <p className=''>
-              Tailor-made screens for windows, doors, and enclosures—designed to fit perfectly and enhance durability.
-            </p>
-            <ul className='list-disc list-inside ml-6'>
-              <li>
-                Custom sizes and shapes
-              </li>
-              <li>
-                Enhances home appearance
-              </li>
-              <li>
-                Keeps insects and Debris out
-              </li>
-            </ul>
  </ol>
  </ul>
 </div>
@@ -287,7 +263,7 @@ export default function App() {
 </div>
 <div id='contact' className='bg-[#1E3A8A] flex flex-col justify-around items-center h-[40vh]'>
   <h1 className='text-5xl text-white'>
-    Contact us Now!
+    Contact Us Now!
   </h1>
   <div className='flex justify-around  w-full'>
          <a id='contactBtn' href="tel:+2074791570" 
@@ -295,7 +271,7 @@ export default function App() {
   Call Now For a Quote Today!
 </a>
  <a id='contactBtn' href="mailto:tmlegos@gmail.com" 
-   className="bg-red-600 text-white px-[50px] py-[25px] text-2xl rounded-lg font-semibold hover:bg-red-700 transition sm:text-sm ">
+   className="bg-red-600 text-white px-[50px] py-[25px] text-2xl rounded-lg font-semibold hover:bg-red-700 transition">
   Email us for further information
 </a>
 </div>

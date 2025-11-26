@@ -21,10 +21,6 @@ p{
 #aboutP{
     font-size: 15px;
 }
-iframe{
-    width: 480px;
-    height:360px
-}
 }
 @media(max-width:600px){
     html{
@@ -56,12 +52,7 @@ iframe{
      display: flex;
      flex-direction: column;
     }
-iframe{
-    width:fit-content;
-    margin-left:100px;
-    margin-top: 25px;
-    height: 250px;
-}
+
 #about{
     flex-direction: column;
 }
@@ -71,10 +62,7 @@ iframe{
     align-items: center;
     justify-content: center;
 }
-a{
-    width: 50px;
-    font-size: 8px;
-}
+
   #contactBtn{
     
      
