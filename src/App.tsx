@@ -99,7 +99,7 @@ export default function App() {
 
  
 <div id='services' className='bg-gray-100  flex flex-col items-center p-24 w-full gap-8'>
-        <h1 className='text-4xl font-bold mb-[5vh] col-span-2 underline text-center'>
+        <h1 id='serviceHeader' className='text-4xl font-bold mb-[5vh] col-span-2 underline text-center'>
           Landmark Services
         </h1>
         <p id='serviceAbout' className='w-[50vw] text-xl col-span-2'>
@@ -266,7 +266,7 @@ export default function App() {
     Contact Us Now!
   </h1>
   <div className='flex justify-around  w-full'>
-         <a id='contactBtn' href="tel:+2074791570" 
+         <a id='contactBtn' href="tel:+8134446097" 
    className="bg-red-600 text-white px-[50px] py-[25px] text-2xl rounded-lg font-semibold hover:bg-red-700 transition">
   Call Now For a Quote Today!
 </a>
