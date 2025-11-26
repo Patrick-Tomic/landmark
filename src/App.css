@@ -23,36 +23,38 @@ p{
 }
 }
 @media(max-width:600px){
+    *{
+    margin: 0;
+    padding: 0;
+}
     html{
         width: 100%;
+        
     }   
-    nav{
-        font-size: 12px;
-    }    
-   
-    #serviceAbout{
-        width:auto;
-    }
-    #imgDiv{
-       gap:10px;
-    }
+  
      #imgA{
-       grid-column: 1/4;
+        align-self: center;
+        justify-self: center;
+       grid-column: 1/5;
        grid-row: 1/2;
-        min-width: 400px;
-        min-height: 100px;
+         
+        max-width: 400px;
+        max-height: 400px;
         
     }
-    #imgB{
+    #imgB{ 
+         margin-left: 50px;
         grid-column: 1/2;
-        min-width: 200px;
-        height: 200px;
+        max-width: 200px;
+        max-height: 200px;
         
     }
     #imgC{
         grid-column: 3/4;
-        min-width: 200px; 
-        height: 200px;
+          
+       
+        max-width: 200px;
+        max-height: 200px;
         
     }
 
@@ -61,7 +63,7 @@ p{
         margin-left: 30px;
     }
     #tearP{
-        width: 100vw;
+        width: 300px;
     }
 
 #about{
@@ -69,13 +71,15 @@ p{
 }
  
 #serviceList{
-    border: 3px solid black;
+    
 text-align: center;
  width: 300px;
- font-size: 12px;
+
+ 
 }
+ 
 #listDiv{
-    font-size: 10px;
+     
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -90,5 +94,9 @@ text-align: center;
   }
 nav{
     font-size: 10px;
+}
+#serviceAbout{
+    width:400px;
+    font-size: 18px;
 }
 }
