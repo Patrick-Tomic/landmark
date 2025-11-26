@@ -51,7 +51,7 @@ export default function App() {
       <a className='titleAnchor' href='#top'>
         Landmark Pressure Washing and Screen Repair
       </a>
-      <a href="#about">About</a>
+      <a className='sm:text-[px]' href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>

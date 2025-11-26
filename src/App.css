@@ -34,24 +34,22 @@ p{
         width:auto;
     }
      #imgA{
-       
+       grid-column: 1/4;
         width: 100vw;
         height: 25vh;
     }
     #imgB{
-        
-        width: 100vw;
+        grid-column: 1/2;
+        width: 100%;
         height: 25vh;
     }
     #imgC{
-        width: 100vw;
+        grid-column: 3/4;
+        width: 100%;
         height: 25vh;
     }
 
-    #imgDiv{
-     display: flex;
-     flex-direction: column;
-    }
+    
 
 #about{
     flex-direction: column;
